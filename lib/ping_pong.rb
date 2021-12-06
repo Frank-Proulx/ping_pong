@@ -3,7 +3,7 @@ require('pry')
 def ping_pong(number)
   array = []
   counter = 0
-  while (counter < number)
+  while (counter < number.to_i())
     counter += 1
     if (counter.%(3).eql?(0)) && (counter.%(5).eql?(0))
       array.push('ping-pong')
@@ -16,7 +16,8 @@ def ping_pong(number)
     end
   end
   array
-  # array.each do |element|
-  #   puts element
-  # end
 end
+
+puts "Input a number"
+pinged = gets.chomp()
+puts ping_pong(pinged)
