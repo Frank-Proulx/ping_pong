@@ -16,4 +16,7 @@ def ping_pong(number)
     end
   end
   array
+  # array.each do |element|
+  #   puts element
+  # end
 end
